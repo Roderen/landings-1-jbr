@@ -1,0 +1,128 @@
+.section-floor {
+  padding: 60px 0 80px;
+}
+
+.floor {
+}
+
+.floor__title {
+  @include MontserratSans(40px, 400, 52px);
+  color: $black;
+  text-transform: uppercase;
+  position: relative;
+
+  &:before {
+    bottom: -10px;
+  }
+}
+
+.floor__buttons {
+  margin-top: 70px;
+  position: relative;
+}
+
+.floor__buttons-current {
+  display: none;
+  width: calc(100% - 50px);
+  margin: 0 auto;
+  padding: 16px 30px 16px 20px;
+  background-color: $ocean;
+  @include MontserratSans(16px, 600, inherit);
+  color: $white;
+}
+
+.floor__buttons-list {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 1px;
+}
+
+.floor__buttons--btn {
+  padding: 18px 10px;
+  min-width: 140px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  border: none;
+  @include MontserratSans(14px, 400, inherit);
+  color: $black;
+
+  &.active {
+    font-weight: 600;
+    color: $white;
+    background-color: $ocean;
+  }
+}
+
+.floor__info {
+  margin-top: 60px;
+  display: none;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 30px;
+
+  &.active {
+    display: flex;
+  }
+}
+
+.floor__left {
+  max-width: 420px;
+  width: 100%;
+}
+
+.floor__info-test__title {
+  @include MontserratSans(35px, 500, 47px);
+  color: $black;
+}
+
+.floor__info-text__list {
+  margin-top: 30px;
+
+  div {
+    display: flex;
+    align-items: center;
+    @include MontserratSans(20px, 300, 40px);
+    color: $black;
+
+    img {
+      margin-right: 5px;
+      width: 30px;
+      height: 30px;
+    }
+
+    strong {
+      margin-right: 5px;
+      font-weight: 500;
+    }
+  }
+}
+
+.floor__info-button {
+  margin-top: 40px;
+  background-color: $ocean;
+  color: $white;
+  min-width: 200px;
+}
+
+.floor_right {
+  max-width: 730px;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+
+  div {
+    &:first-child {
+      max-width: 530px;
+    }
+
+    &:last-child {
+      max-width: 200px;
+    }
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}

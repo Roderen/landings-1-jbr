@@ -1,0 +1,32 @@
+.section-banner {
+  padding: 120px 20px 40px;
+  background-image: url('/images/img/banner.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center -350px;
+  background-attachment: fixed;
+  width: calc(100% - 40px);
+  height: auto;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+  }
+}
+
+.banner {
+  position: relative;
+  z-index: 1;
+}
+
+.banner__title {
+  @include MontserratSans(54px, 500, 84px);
+  color: $white;
+  text-align: center;
+}

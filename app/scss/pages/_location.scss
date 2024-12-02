@@ -1,0 +1,55 @@
+body.location-page {
+  .section-location {
+    padding: 70px 0 50px;
+  }
+
+  .location__info {
+    margin-top: 0;
+  }
+
+  .about__left {
+    max-width: 550px;
+  }
+
+  .location-page__features {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-column-gap: 10px;
+    grid-row-gap: 40px;
+  }
+
+  .location-page__features-item {
+    display: flex;
+    align-items: flex-start;
+
+
+    img {
+      width: 60px;
+      height: 60px;
+      margin-right: 20px;
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+
+      span {
+        &.blue {
+          @include MontserratSans(18px, 500, 28px);
+          color: $ocean;
+        }
+
+        &.black {
+          @include MontserratSans(14px, 400, 22px);
+          color: $black;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+
+  .section-aparts {
+    padding: 60px 0;
+  }
+}

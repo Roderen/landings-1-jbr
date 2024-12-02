@@ -1,0 +1,65 @@
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  padding: 15px 0;
+  background-color: #fff;
+  z-index: 20;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 80px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  margin-right: 65px;
+}
+
+.header__nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  margin-right: 85px;
+
+  li {
+    a {
+      @include MontserratSans(15px, 400, inherit);
+      color: $black;
+      transition: .3s;
+
+      &:hover{
+        color: $ocean;
+      }
+    }
+  }
+}
+
+.header__video {
+  cursor: pointer;
+  position: relative;
+  width: 25px;
+  height: 25px;
+  border: 2px solid $ocean;
+  border-radius: 50%;
+
+  span {
+    position: absolute;
+    top: 9px;
+    left: 10px;
+    transform: rotate(90deg);
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    border-bottom: 6px solid $ocean;
+  }
+}

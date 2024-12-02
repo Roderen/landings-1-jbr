@@ -1,0 +1,26 @@
+.under-line {
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: -22px;
+    left: 0;
+    width: 110px;
+    height: 3px;
+    background-color: $ocean;
+  }
+}
+
+html[dir="rtl"] {
+  .under-line {
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: -22px;
+      right: 0;
+      left: inherit;
+      width: 110px;
+      height: 3px;
+      background-color: $ocean;
+    }
+  }
+}

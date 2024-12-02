@@ -1,0 +1,37 @@
+@import 'fonts';
+@import 'reset';
+@import 'mixins';
+@import 'global';
+
+@import 'components/all-buttons';
+@import 'components/under-line';
+@import 'components/bg-image';
+@import 'components/all-forms';
+@import 'popup';
+@import 'header';
+@import 'burger';
+
+@import 'sections/intro';
+@import 'sections/about';
+@import 'sections/interior';
+@import 'sections/location';
+@import 'sections/aparts';
+@import 'sections/payment';
+@import 'sections/discover';
+@import 'sections/footer';
+@import 'sections/floor';
+@import 'sections/more';
+@import 'sections/call';
+
+@import 'components/banner';
+@import 'components/breadcrumbs';
+
+@import 'pages/about';
+@import 'pages/location';
+@import 'pages/payment';
+@import 'pages/projects';
+
+@import 'media';
+
+@import 'pages/ru';
+@import 'pages/ar';

@@ -1,0 +1,96 @@
+.section-payment {
+  padding: 50px 0 100px;
+}
+
+.payment {
+}
+
+.payment__title {
+  position: relative;
+  @include MontserratSans(40px, 400, inherit);
+  color: $black;
+}
+
+.payment__list {
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 40px 40px;
+}
+
+.payment__list-item {
+  position: relative;
+  padding: 30px 50px;
+  width: 100%;
+  max-width: 160px;
+  text-align: center;
+  box-shadow: 0px 0px 20px 0px rgba(186,180,180,0.2);
+  cursor: pointer;
+
+  &:before, &:after {
+    content: '';
+    position: absolute;
+  }
+
+  &:before {
+    top: -6px;
+    left: -6px;
+    border-top: 6px solid $ocean;
+    border-left: 6px solid $ocean;
+    width: 180px;
+    height: 180px;
+  }
+
+  &:after {
+    bottom: -6px;
+    right: -6px;
+    border-bottom: 6px solid $ocean;
+    border-right: 6px solid $ocean;
+    width: 180px;
+    height: 180px;
+  }
+
+
+  .percent {
+    position: relative;
+    @include MontserratSans(40px, 500, inherit);
+    color: $ocean;
+
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      right: 50%;
+      transform: translateX(50%);
+      height: 1px;
+      background-color: #cccccc;
+    }
+
+    &:before {
+      width: 90%;
+      bottom: -20px;
+    }
+
+    &:after {
+      width: 75%;
+      bottom: -28px;
+    }
+  }
+
+  .date {
+    width: 140px;
+    margin: 50px auto 0;
+    @include MontserratSans(16px, 500, 25px);
+    color: #666666;
+  }
+}
+
+.payment__button {
+  text-align: center;
+  width: fit-content;
+  margin: 70px auto 0;
+  display: block;
+}

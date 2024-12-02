@@ -1,0 +1,173 @@
+.burger__btn {
+  position: relative;
+  width: 28px;
+  height: 20px;
+  cursor: pointer;
+  display: none;
+
+  span {
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: $ocean;
+
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background-color: $ocean;
+    }
+
+    &:before {
+      top: 9px;
+    }
+
+    &:after {
+      top: 18px;
+    }
+  }
+}
+
+
+.burger__menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 30;
+  pointer-events: none;
+  display: none;
+
+  &.active {
+    pointer-events: all;
+
+    .burger__overlay {
+      background-color: rgba($black, 0.6);
+    }
+
+    .burger__menu-inner {
+      left: 0;
+    }
+  }
+}
+
+.burger__overlay {
+  width: 100%;
+  height: 100vh;
+  z-index: 29;
+  background-color: rgba($black, 0);
+  transition: background-color .3s;
+}
+
+.burger__menu-inner {
+  position: absolute;
+  top: 0;
+  left: -350px;
+  padding: 100px 50px;
+  width: 200px;
+  z-index: 30;
+  background-color: $white;
+  height: calc(100vh - 200px);
+  overflow-y: auto;
+  transition: left .3s;
+}
+
+.burger__menu-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 35px;
+  height: 35px;
+  background-color: $black;
+
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    left: 8px;
+    width: 20px;
+    height: 2px;
+    background-color: $white;
+  }
+
+  &:before {
+    rotate: -45deg;
+    top: 16px;
+  }
+
+  &:after {
+    rotate: 45deg;
+    top: 16px;
+  }
+}
+
+.burger__logo {
+  width: 150px;
+}
+
+.burger__nav {
+  margin-top: 30px;
+}
+
+.burger__nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  li {
+    a {
+      @include MontserratSans(16px, 400, inherit);
+      color: $black;
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 30px;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.burger__buttons {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.burger__phone {
+}
+
+.burger__whatsapp {
+  background-color: #25d366;
+  padding: 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% - 20px);
+
+  img {
+    margin-right: 10px;
+  }
+
+  span {
+    @include MontserratSans(14px, 600, inherit);
+    color: $white;
+  }
+}
+
+.burger__langs {
+  margin-top: 30px;
+  display: flex;
+  gap: 30px;
+
+  a {
+    @include MontserratSans(16px, 600, inherit);
+    color: $black;
+    padding: 12px 10px;
+    border: 1px solid $black;
+  }
+}

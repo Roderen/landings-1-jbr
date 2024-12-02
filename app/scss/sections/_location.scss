@@ -1,0 +1,157 @@
+.section-location {
+  padding: 70px 0 80px;
+}
+
+.location {
+}
+
+.location__title {
+  position: relative;
+  @include MontserratSans(40px, 400, 62px);
+  color: $black;
+  text-transform: uppercase;
+
+  &:before {
+    bottom: -10px;
+  }
+}
+
+.location__info {
+  margin-top: 80px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.location__left {
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 150px;
+    height: 150px;
+    background-color: $ocean;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: -25px;
+    left: -60px;
+    width: 265px;
+    height: 265px;
+    background-image: url('/images/icon/dots.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
+}
+
+.location__img {
+  position: relative;
+  width: 580px;
+  height: 410px;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/img/location/image-2.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: .5s;
+    opacity: 0;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.location__img:hover.location__img:before {
+  opacity: 1;
+}
+
+.location__right {
+  max-width: 520px;
+}
+
+.location__info-title {
+  position: relative;
+  @include MontserratSans(32px, 400, 42px);
+  color: $black;
+  text-transform: uppercase;
+
+  &:before {
+    bottom: -15px;
+  }
+}
+
+.location__info-descr {
+  margin-top: 40px;
+
+  p {
+    margin-top: 25px;
+    @include MontserratSans(14px, 400, 22px);
+    color: $black;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+.location__info-button {
+  margin-top: 15px;
+  display: block;
+  width: fit-content;
+  text-align: center;
+}
+
+.location__features {
+  margin-top: 140px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-column-gap: 20px;
+  grid-row-gap: 40px;
+}
+
+.location__features-item {
+  display: flex;
+  align-items: flex-start;
+
+
+  img {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+
+    span {
+      &.blue {
+        @include MontserratSans(18px, 500, 28px);
+        color: $ocean;
+      }
+
+      &.black {
+        @include MontserratSans(14px, 400, 22px);
+        color: $black;
+        margin-top: 5px;
+      }
+    }
+  }
+}

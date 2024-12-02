@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.min.css">
+
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+
+  <style>
+    .section-intro {
+      height: calc(100vh - 330px);
+      min-height: 450px;
+    }
+
+    .button-more {
+      display: inline-block;
+      text-align: center;
+      width: fit-content;
+    }
+
+    .intro-404 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 380px;
+      font-weight: 700;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+      opacity: .3;
+    }
+
+    @media screen and (max-width: 1024px) {
+      .intro-404 {
+        font-size: 280px;
+      }
+    }
+
+    @media screen and (max-width: 560px) {
+      .intro-404 {
+        font-size: 220px;
+      }
+    }
+
+    @media screen and (max-width: 430px) {
+      .intro-404 {
+        font-size: 160px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+    <div class="header">
+      <div class="header-left">
+        <a href="" class="header__logo">
+          <img src="/images/icon/logo-mpp-blue.svg" alt="Metropolitan Premium Properties" width="130">
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="main">
+  <section class="section-intro">
+    <div class="container">
+      <div class="intro-404">404</div>
+      <div class="intro">
+        <img src="/images/icon/logo-vie-white.svg" alt="Vie" width="200" class="intro__vie-logo">
+
+        <div class="intro__info" data-aos="fade-right" data-aos-delay="500" data-aos-duration="700">
+          <h2 class="intro__info-title">La Vie is a Stylish Newest Addition to The Skyline of Dubai Marina</h2>
+          <p class="intro__info-descr">Sorry, this page does not exist</p>
+          <div class="intro__info-buttons">
+            <a href="" class="more button-more">Home Page</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+</body>
+
+</html>

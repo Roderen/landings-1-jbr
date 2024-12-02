@@ -1,0 +1,15 @@
+body.payment-plan-page {
+  .payment__list {
+    margin-top: 70px;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px 35px;
+    justify-content: center;
+  }
+
+  .payment__list-item {
+    width: 100%;
+    display: block;
+  }
+}

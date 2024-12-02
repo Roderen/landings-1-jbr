@@ -1,0 +1,126 @@
+html[lang="ru"] {
+  .header__nav-list__360 {
+    font-weight: 600;
+    color: $ocean;
+  }
+
+  .intro__info-title {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .intro__info-descr {
+    margin-top: 15px;
+    font-size: 24px;
+    line-height: 31px;
+  }
+
+  .intro__info-buttons {
+    .brochure {
+      display: inline;
+      text-align: center;
+      width: fit-content;
+      min-width: 200px;
+    }
+  }
+
+  .intro__list-item div {
+    font-size: 18px;
+  }
+
+  .aparts__list-item__img.sold:before {
+    background-image: url("/images/icon/aparts/sold-ru.svg");
+  }
+
+  .about__left {
+    max-width: 600px;
+    width: 100%;
+  }
+
+  .about__title {
+    font-size: 30px;
+    line-height: 39px;
+  }
+
+  .footer__title {
+    font-size: 28px;
+  }
+
+  .floor__info-test__title {
+    font-size: 25px;
+    line-height: 34px;
+    max-width: 230px;
+  }
+
+
+  // Media query
+  @include mediaMax(1025px) {
+    .intro__info {
+      max-width: 600px;
+    }
+  }
+
+  @include mediaMax(801px) {
+    .location__title {
+      font-size: 28px;
+      line-height: 40px;
+    }
+  }
+
+  @include mediaMax(561px) {
+    .intro__vie-logo {
+      width: 160px;
+    }
+
+    .intro__info-title {
+      font-size: 28px;
+      line-height: 32px;
+      margin-top: 20px;
+    }
+
+    .intro__info-descr {
+      font-size: 20px;
+      line-height: 27px;
+    }
+
+    .footer__title {
+      font-size: 22px;
+    }
+  }
+
+  @include mediaMax(431px) {
+    .intro__info-title {
+      font-size: 24px;
+      line-height: 30px;
+    }
+
+    .intro__info-descr {
+      font-size: 18px;
+      line-height: 26px;
+    }
+
+    .about__title {
+      font-size: 23px;
+      line-height: 32px;
+    }
+
+    .interior__title {
+      font-size: 24px;
+      line-height: 30px;
+    }
+
+    .location__title {
+      font-size: 24px;
+      line-height: 30px;
+    }
+
+    .payment__title {
+      line-height: 32px;
+    }
+
+    .floor__info-test__title {
+      font-size: 22px;
+      line-height: 28px;
+    }
+  }
+}

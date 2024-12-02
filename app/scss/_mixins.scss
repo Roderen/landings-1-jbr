@@ -1,0 +1,25 @@
+$black: #373737;
+$white: #ffffff;
+$gray: #d6d6d6;
+$ocean: #d6b180;
+$ocean-black: #ba996a;
+
+
+@mixin MontserratSans($size,$w,$lh) {
+  font-family: 'Montserrat', sans-serif;
+  font-size: $size;
+  font-weight: $w;
+  line-height: $lh;
+}
+
+@mixin mediaMax($w) {
+  @media screen and (max-width: $w) {
+    @content;
+  }
+}
+
+@mixin mediaMin($w) {
+  @media screen and (min-width: $w) {
+    @content;
+  }
+}

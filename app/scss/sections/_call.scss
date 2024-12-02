@@ -1,0 +1,57 @@
+.section-call {
+  padding: 50px 0;
+  background-color: #f8f7f3;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 650px;
+    height: 100%;
+    background-image: url('/images/img/call-bg.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.call {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.call__title {
+  @include MontserratSans(34px, 600, 44px);
+  color: $white;
+  background-color: $ocean;
+  padding: 10px 20px;
+  width: 260px;
+  text-align: center;
+}
+
+.call__descr {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  p {
+    @include MontserratSans(18px, 300, 28px);
+    color: $black;
+
+    strong {
+      font-weight: 600;
+    }
+  }
+}
+
+.call__button {
+  padding: 20px 40px;
+  width: fit-content;
+  text-align: center;
+  min-width: auto;
+}

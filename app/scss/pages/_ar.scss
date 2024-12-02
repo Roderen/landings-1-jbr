@@ -1,0 +1,386 @@
+html[dir="rtl"] {
+  // Burger
+  .burger__whatsapp img {
+    margin-right: 0;
+    margin-left: 10px;
+  }
+
+  .burger__nav-list li a img {
+    margin-right: 0;
+    margin-left: 10px;
+  }
+
+  .breadcrumbs__list li:before {
+    transform: rotate(180deg);
+  }
+
+  // Header
+  .header {
+    justify-content: flex-start;
+  }
+
+  .header-left {
+    margin-left: auto;
+  }
+
+  .header__langs {
+    margin-left: 30px;
+  }
+
+  .header__nav-list {
+    gap: 40px;
+  }
+
+  .header__logo {
+    margin-right: 0;
+    margin-left: 50px;
+  }
+
+  // Intro
+  .section-intro {
+    padding: 110px 0 150px;
+
+    &:after {
+      transform: scale(-1, 1);
+    }
+  }
+
+  .intro__info {
+    max-width: 500px;
+  }
+
+  .intro__info-title {
+    font-size: 40px;
+    line-height: 46px;
+  }
+
+  .intro__info-under-title {
+    position: relative;
+    margin-top: 20px;
+    @include MontserratSans(23px, 300, 30px);
+    color: $black;
+
+    &:before {
+      bottom: -30px;
+      width: 150px;
+    }
+  }
+
+  .intro__info-descr {
+    margin-top: 50px;
+    color: #7a7a7a;
+  }
+
+  .intro__vie-logo {
+    right: inherit;
+    left: 250px;
+    top: 0;
+  }
+
+  .intro__list-item {
+    text-align: center;
+  }
+
+  .about__right {
+    margin-right: 0;
+    margin-left: -130px;
+
+    &:before {
+      left: inherit;
+      right: 100px;
+    }
+  }
+
+
+  // Location
+  .location__info {
+    direction: ltr;
+  }
+
+  .location__right {
+    direction: rtl;
+  }
+
+  .location__features-item img {
+    margin-right: 0;
+    margin-left: 20px;
+  }
+
+  .location-page__features-item img {
+    margin-right: 0;
+    margin-left: 20px;
+  }
+
+
+  // Aparts
+  .aparts__title {
+    font-size: 29px;
+    line-height: 45px;
+  }
+
+  .aparts__list-item__about {
+    text-align: center;
+
+    button {
+      margin: 0 auto;
+      margin-top: 10px;
+    }
+  }
+
+
+  // Discover
+  .discover__list-card__left .desktop {
+    direction: ltr;
+  }
+
+  .discover__list-card__left:after {
+    right: inherit;
+    left: -100px;
+  }
+
+  .discover__list-card__right .buttons .button-more {
+    margin-right: 0;
+    margin-left: 20px;
+  }
+
+  .discover__list-card__right .features__item img {
+    margin-right: 0;
+    margin-left: 20px;
+  }
+
+  .discover__list-card__right .title {
+    font-size: 46px;
+    line-height: 72px;
+  }
+
+
+  // Footer
+  .footer__right {
+    margin-right: 0;
+    margin-left: -30px;
+  }
+
+  .footer__form-label {
+    left: 0;
+    right: 20px;
+    transform-origin: right;
+  }
+
+  .popup__form-label {
+    left: 0;
+    right: 20px;
+    transform-origin: right;
+  }
+
+
+
+
+  /* Media ================================== */
+  @include mediaMax(1025px) {
+    .more__buttons-current {
+      display: block;
+    }
+
+    .more__buttons-list {
+      display: none;
+      flex-direction: column;
+      max-width: 320px;
+      position: absolute;
+      top: 52px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      &.active {
+        display: block;
+      }
+    }
+
+    .more__buttons-btn {
+      text-align: right;
+      border-bottom: 1px solid $black;
+      width: 100%;
+
+      &:last-child {
+        border: none;
+      }
+      
+      &.active {
+        color: $black;
+        background-color: #f0f0f0;
+      }
+    }
+
+    .footer__right {
+      margin-left: -350px;
+    }
+  }
+
+  @include mediaMax(801px) {
+    .section-intro {
+      padding: 230px 0 150px;
+    }
+
+    .intro__vie-logo {
+      left: 0;
+      right: 50%;
+      top: -100px;
+    }
+
+    .intro__info-under-title {
+      color: $white;
+
+      &:before {
+        background-color: $white;
+        right: 50%;
+        transform: translateX(50%);
+      }
+    }
+
+    .intro__info-descr {
+      color: $white;
+    }
+
+    .about__left {
+      text-align: center;
+    }
+
+    .about__title {
+      &:before {
+        right: 50%;
+        transform: translateX(50%);
+      }
+    }
+
+    .about__right:before {
+      right: -20px;
+      top: -20px;
+      height: 300px;
+    }
+
+    .location__right {
+      text-align: center;
+    }
+
+    .location__info-title {
+      &:before {
+        right: 50%;
+        transform: translateX(50%);
+      }
+    }
+
+    .discover__list-card__right .title {
+      text-align: center;
+    }
+
+    .more__title {
+      font-size: 32px;
+      line-height: 38px;
+    }
+
+    .footer__right {
+      margin-left: 0;
+    }
+
+    .footer__title {
+      text-align: center;
+
+      &:before {
+        right: 50%;
+        transform: translateX(50%);
+      }
+    }
+
+    .footer__subtitle {
+      text-align: center;
+    }
+  }
+
+  @include mediaMax(561px) {
+    .intro__info-title {
+      font-size: 35px;
+      line-height: 40px;
+    }
+
+    .intro__info-under-title {
+      font-size: 18px;
+      line-height: 23px;
+    }
+
+    .intro__info-descr {
+      line-height: 23px;
+      max-width: 400px;
+    }
+
+    .discover__list-card__right .title {
+      font-size: 34px;
+      line-height: 56px;
+    }
+  }
+
+  @include mediaMax(431px) {
+    .intro__info-descr {
+      display: none;
+    }
+
+    .intro__info-under-title:before {
+      display: none;
+    }
+
+    .intro__info-title {
+      margin-top: 0;
+    }
+
+    .intro__info-under-title {
+      font-size: 15px;
+      line-height: 20px;
+      margin-top: 10px;
+    }
+
+    .about__right:before {
+      height: 150px;
+    }
+
+    .aparts__title {
+      font-size: 24px;
+      line-height: 36px;
+    }
+
+    .discover__list-card__right .title {
+      font-size: 28px;
+      line-height: 42px;
+    }
+  }
+
+  @include mediaMax(401px) {
+    .intro__info-title {
+      font-size: 32px;
+      line-height: 38px;
+    }
+  }
+
+  @include mediaMax(376px) {
+    .intro__info-title {
+      font-size: 26px;
+      line-height: 30px;
+    }
+
+    .aparts__title {
+      font-size: 22px;
+      line-height: 32px;
+    }
+
+    .payment__title {
+      font-size: 25px;
+    }
+
+    .discover__title {
+      font-size: 24px;
+      line-height: 28px;
+    }
+
+    .more__title {
+      font-size: 28px;
+      line-height: 32px;
+    }
+  }
+}

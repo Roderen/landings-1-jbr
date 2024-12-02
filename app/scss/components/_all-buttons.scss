@@ -1,0 +1,30 @@
+.button-more {
+  @include MontserratSans(14px, 600, inherit);
+  padding: 20px 10px;
+  min-width: 180px;
+  background-color: $ocean;
+  color: $white;
+  border: none;
+  outline: none;
+  margin: 0;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: .3s;
+
+  &:hover {
+    background-color: $ocean-black;
+  }
+}
+
+.button-download {
+  @include MontserratSans(14px, 600, inherit);
+  padding: 20px 10px;
+  min-width: 230px;
+  background-color: $white;
+  color: $ocean;
+  border: none;
+  outline: none;
+  margin: 0;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
